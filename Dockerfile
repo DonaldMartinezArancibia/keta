@@ -18,4 +18,4 @@ RUN chown -R www-data: /app
 
 CMD sh /app/docker/startup.sh
 
-RUN php artisan migrate --force
+RUN sh -c php artisan migrate --force
